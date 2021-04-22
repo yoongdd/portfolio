@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>yunseo's portfolio</title>
+    <!-- meta tag를 이용해서 정보 입력-->
+    <meta name="description" content="yunseo's web portfolio">
+    <meta name="author" content="yunseo">
+
+    <!--fontawesome, google font link-->
+    <script src="https://kit.fontawesome.com/8673add9cb.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap"
+        rel="stylesheet">
+
+    <!--처음 site 들어갔을때 title에 icon뜨게 하기-->
+    <link rel="icon" type="image/png" href="images/logo_yunseo5.png">
+
+    <!-- css, javascript link-->
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+    <!-- defer: html pursing되는 동안 javascript파일을 다운받아놓고 html pursing이 다 완료된 다음 javascript파일을 실행-->
+</head>
+
+<body>
+    <!-- nav -->
+    <nav id="navbar">
+        <div class="navbar__logo">
+            <!-- <i class="far fa-smile"></i> -->
+            <a href="#">
+                <img src="./images/logo_yunseo_blue.png" alt="yunseo's profile logo" data-link="#home"/>
+                <!-- Yunseo's portfolio -->
+            </a>
+        </div>
+        <ul class="navbar__menu">
+            <li class="navbar__menu__item" data-link="#home">Home</li>
+            <li class="navbar__menu__item" data-link="#about">about</li>
+            <li class="navbar__menu__item" data-link="#skills">skills</li>
+            <li class="navbar__menu__item" data-link="#projects">projects</li>
+            <li class="navbar__menu__item" data-link="#contact">contact</li>
+        </ul>
+
+        <!-- toggle -->
+        <button class="navbar__toggle-btn">
+            <i class="fas fa-bars"></i>
+        </button>
+
+    </nav>
+
+    <!-- home -->
+    <section id="home">
+        <div class="home__image">
+            <img src="images/yunseo.jpg" alt="yunseo image" class="image">
+            <img src="./images/logo_yunseo.png" alt="yunseo's profile logo" class="logo" />
+        </div>
+        <div class="home__info">
+            <h1 class="home__title">Hello,<br> I'm Yunseo</h1>
+            <h2 class="home__description">Welcome to Yunseo's portfolio</h2>
+            <button class="home__contact">contact me</button>
+        </div>
+
+    </section>
+
+    <!-- about -->
+    <section id="about" class="section">
+        <div class="section_container">
+            <h1 class="about__title">About me</h1>
+            <div class="about__contents">
+                <div class="about__info">
+                    <div class="about__text">
+                        <h2 class="about__header">즐거운 마음으로 성장하는 개발자, 남윤서입니다</h2>
+                        <p class="about__description"> 안녕하세요 개발자를 꿈꾸는 남윤서입니다. <br> 
+                            무언가를 즐긴다는 것은 저를 성장시켜온 고마운 장점입니다. <br>
+                            즐거운 자세로 열정을 가지고 완성도 높은 프로그래밍을 하는 것이 저의 목표입니다.<br>
+                            끊임없이 연구하고 배움의 자세로 임하여 멋진 개발자가 되고싶습니다.
+                        </p>
+                    </div>
+                    <div class="about__jobs">
+                        <div class="about__job">
+                            <p class="job__period"><i class="fas fa-check"></i> 2020.03 ~ 2020.09</p>
+                            <div class="job__description">
+                                <p class="job__name"> 디지털컨버전스 기반 spring 개발자 양성</p>
+                                <p class="job__info"> - 비트교육센터</p>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="about__certificate">
+                        <p class="certificate__info">
+                            <i class="fas fa-check"></i> 정보처리기사</p>
+                    </div>
+                </div>
+                <div class="about__avatar">
+                    <img src="images/yunseo_profile.jpg" alt="yunseo's profile photo"/>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- skill -->
+    <section id="skills" class="section">
+        <h1 class="skills__title">Skills</h1>
+        <div id="skills__description">
+            <div class="skills__description--first">
+                <img src="images/skill logo/java.png" alt="java" class="logo__image">
+                <img src="images/skill logo/spring.png" alt="spring" class="logo__image">
+                <img src="images/skill logo/springboot.jpg" alt="springboot" class="logo__image">
+                <img src="images/skill logo/thymeleaf-logo.png" alt="thymeleaf" class="logo__image">
+                <img src="images/skill logo/ORACLE.png" alt="ORACLE" class="logo__image">
+                <img src="images/skill logo/mybatis-logo.png" alt="mybatis" class="logo__image">
+            </div>
+            <div class="skills__description--second">
+                <img src="images/skill logo/jquery.png" alt="jQuery" class="logo__image">
+                <img src="images/skill logo/ajax.jpg" alt="ajax" class="logo__image">
+                <img src="images/skill logo/html5.png" alt="html" class="logo__image">
+                <img src="images/skill logo/css.png" alt="css" class="logo__image">
+                <img src="images/skill logo/javascript.png" alt="javascript" class="logo__image">
+                <img src="images/skill logo/apatch.png" alt="apatch" class="logo__image">
+                <img src="images/skill logo/git.png" alt="git" class="logo__image">
+            </div>
+        </div>
+
+    </section>
+
+    <!-- projects -->
+    <section id="projects">
+        <h1 class="projects__title">Projects</h1>
+        <!-- project -->
+        <div class="projects__project">
+            <div class="project_info">
+                <div class="project_header">
+                    <h2 class="project_type">Web-proejct</h2>
+                    <h1 class="project_name">WM : What's in My cart?</h1>
+                </div>
+                <div class="project_skills">
+                    <i class="fas fa-check"> Java</i>
+                    <i class="fas fa-check"> Springboot</i>
+                    <i class="fas fa-check"> Bootstrap</i>
+                    <i class="fas fa-check"> Javascript</i>
+                    <i class="fas fa-check"> JQuery</i>
+                    <i class="fas fa-check"> HTML</i>
+                    <i class="fas fa-check"> CSS</i>
+                    <i class="fas fa-check"> AWS</i>
+                    <i class="fas fa-check"> MariaDB</i>
+                </div>
+                <p class="project_description">
+                    <b>'Insta Cart' 사이트를 벤치마킹하여 구현한 'What's in My cart' 프로젝트.<br></b>
+                    <b>위치정보를 기반으로한 실시간 배송서비스 구현.<br></b>
+                    ㆍ  mart의 상품데이터를 crawling하여 활용할 수 있도록 기능 구현.<br>
+                    ㆍ  Shop의 상품 데이터 관리.<br>
+                    ㆍ  Shop 페이지 디자인 및 기능 구현.<br>
+                    ㆍ  QnA 게시판 디자인 및 기능 구현.<br>
+                    ㆍ  관리자 QnA 게시판 디자인 및 기능 구현.
+                </p>
+                <div class="project_link">
+                    <a href="#" onclick="window.open('video/WhatsInMyCart_video.mp4')"><i class="far fa-play-circle"> Video</i></a>
+                    <a href="#" onclick="window.open('ppt/WhatsInMyCart_ppt.pdf')"><i class="far fa-file-powerpoint"> PPT</i></a>
+                    <a href="https://github.com/yoongdd/Web-project"><i class="fab fa-github"> gitHub</i></a>
+                </div>
+            </div>
+            <div class="project_image">
+                <img src="images/projects/What's in My cart2.png" alt="libraryManagement" class="project_image">
+            </div>
+        </div>
+        <!-- project -->
+        <div class="projects__project">
+            
+            <div class="project_info">
+                <div class="project_header">
+                    <h2 class="project_type">java project</h2>
+                    <h1 class="project_name">도서관리 프로그램</h1>
+                </div>
+                <div class="project_skills">
+                    <i class="fas fa-check"> Java</i>
+                    <i class="fas fa-check"> Oracle</i>
+                </div>
+                <p class="project_description">
+                    <b>도서대여 및 관리 시스템을 구현한 '도서관리프로그램' 프로젝트.<br></b>
+                    ㆍ  도서 등록, 삭제, 검색, 대여 관리 구현.<br>
+                    ㆍ  JDBC를 활용하여 도서 및 대여정보를 관리할 수 있도록 구현.
+                </p>
+                <div class="project_link">
+                    <a href="#" onclick="window.open('ppt/library_ppt.pdf')"><i class="far fa-file-powerpoint"> PPT</i></a>
+                    <a href="https://github.com/yoongdd/library_javaProject"><i class="fab fa-github"> gitHub</i></a>
+                </div>
+            </div>
+            <div class="project_image">
+                <img src="images/projects/libraryManagement.png" alt="libraryManagement" class="project_image">
+            </div>
+
+        </div>
+    </section>
+
+    <!-- contact -->
+    <section id="contact" class="section">
+        <h1 class="contact__title">Contact me</h1>
+        <h2 class="contact__email">
+            <i class="far fa-envelope"> namys0114@gmail.com</i>
+        </h2>
+        <!-- <div class="contact__git">
+            <a href="#" class="contact__git">
+                <i class="fab fa-github"> gitHub</i>
+            </a>
+        </div> -->
+        <h3 class="contact__greeting"> " Thank you for watching "</h3>
+        <p class="contact__right">2021 yunseo - All rights reserved</p>
+    </section>
+
+    <!-- arrow up -->
+    <button class="arrow-up">   
+        <i class="fas fa-angle-double-up"></i>
+    </button>
+
+</body>
+</html>
